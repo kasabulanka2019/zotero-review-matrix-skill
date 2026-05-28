@@ -32,7 +32,9 @@ Clone this repository, then copy the skill folder:
 
 ```powershell
 git clone https://github.com/kasabulanka2019/zotero-review-matrix-skill.git
-Copy-Item -Recurse -Force ".\zotero-review-matrix-skill\zotero-review-matrix" "$env:USERPROFILE\.codex\skills\zotero-review-matrix"
+$target = "$env:USERPROFILE\.codex\skills\zotero-review-matrix"
+Remove-Item -Recurse -Force $target -ErrorAction SilentlyContinue
+Copy-Item -Recurse -Force ".\zotero-review-matrix-skill\zotero-review-matrix" $target
 ```
 
 Or run the install script from the cloned repository:

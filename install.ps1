@@ -10,6 +10,7 @@ if (!(Test-Path -LiteralPath $source)) {
 }
 
 New-Item -ItemType Directory -Force -Path $targetRoot | Out-Null
+Remove-Item -Recurse -Force $target -ErrorAction SilentlyContinue
 Copy-Item -Recurse -Force -Path $source -Destination $target
 
 Write-Host "Installed zotero-review-matrix to $target"
