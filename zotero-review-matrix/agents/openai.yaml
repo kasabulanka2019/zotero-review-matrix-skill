@@ -1,0 +1,4 @@
+interface:
+  display_name: "Zotero Review Matrix"
+  short_description: "Zotero notes to review matrices."
+  default_prompt: "Use $zotero-review-matrix to create a thematic literature review matrix from a Zotero collection, with Markdown and CSV outputs."
