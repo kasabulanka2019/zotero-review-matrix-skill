@@ -1,5 +1,7 @@
 # Zotero Review Matrix Skill
 
+[中文说明](README.zh-CN.md)
+
 `zotero-review-matrix` is a Codex skill for turning a Zotero collection and all nested subcollections into:
 
 - a thematic Markdown literature review matrix
